@@ -1,5 +1,15 @@
 /* common/body elements */
-/* Header */
+body{
+    background-color: cornflowerblue;
+}
+.navLeft{
+    text-align: left;
+}
+.navRight{
+    text-align: right;
+}
+
+/* Header and Title Bar */
 /* Nav bars */
 /* Slideshow */
 /* Sidebar/Merch Section */
