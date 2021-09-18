@@ -9,8 +9,8 @@
 </head>
 <body>
     <!-- Search, align left. Nav align right -->
-    <label for="gsearch" >Search Google:</label>
-        <input type="search" id="gsearch" name="gsearch">
+    <label for="gsearch" ></label>
+        <input type="search" id="gsearch" name="gsearch" placeholder="Search this site">
         <nav class="navLeft">
 
         </nav>
@@ -23,6 +23,31 @@
     <!-- Titlebar -->
     <h1 style="text-align: center;">Art's Art Supply</h1>
     <!-- Slideshow -->
+    <section class="slideshowSection">
+    <div class="w3-content w3-section" style="max-width:500px" style="max-height:250px">
+        <img class="slideshow w3-animate-top" src="./assets/art1.jpg" style="width:100%">
+        <img class="slideshow w3-animate-bottom" src="./assets/art2.jpg" style="width:100%">
+        <img class="slideshow w3-animate-top" src="./assets/art3.jpg" style="width:100%">
+        <img class="slideshow w3-animate-bottom" src="./assets/art4.jpg" style="width:100%">
+      </div>
+      
+      <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("slideshow");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2500);    
+      }
+      </script>
+      </section>
     <!-- merch divs 1-3 or 1-6, plus order tabs -->
     <!-- footer nav to the left, legal tag to the right -->
     

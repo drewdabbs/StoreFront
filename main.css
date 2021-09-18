@@ -12,5 +12,12 @@ body{
 /* Header and Title Bar */
 /* Nav bars */
 /* Slideshow */
+.slideshow{
+    display:none;
+}
+.slideshowSection div{
+    
+    margin: auto;
+}
 /* Sidebar/Merch Section */
 /* footer and second Nav elementnts */
