@@ -1,6 +1,13 @@
 /* common/body elements */
+/* colors in use via adobe color wheel "https://color.adobe.com/create/color-wheel"
+dark-ish blue   #447FB3
+beige-pink      #FF9994
+cornflower      #7AC0FF
+gold            #F5FF61
+dark gold       #ACB34D
+*/
 body{
-    background-color: cornflowerblue;
+    background-color: #7AC0FF;
 }
 .navLeft{
     text-align: left;
@@ -10,14 +17,47 @@ body{
 }
 
 /* Header and Title Bar */
+#title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F5FF61;
+    font-size: 6.5rem;
+    letter-spacing: -0.02em;
+    margin: 0ch;
+    text-shadow: 2px 3px 0 #ACB34D; offset-x | offset-y | blur-radius | color
+}
+h2{
+    color: #ACB34D;
+    text-shadow: 2px 3px 2px black; offset-x | offset-y | blur-radius | color
+    
+}
 /* Nav bars */
 /* Slideshow */
 .slideshow{
-    display:none;
+    display: none;
 }
 .slideshowSection div{
     
     margin: auto;
 }
 /* Sidebar/Merch Section */
+.merch{
+    display: inline-block;
+    
+    margin: 2em auto;
+    padding: 2em;
+}
+.merch div{
+    display: inline-block;
+    margin: 1em;
+    max-width: 350px;
+    max-height: 700px;
+    background-color: #447FB3;
+    border-radius: 1em;
+    box-shadow: 1px 1px 5px #777;/* offset-x | offset-y | blur-radius | color */
+    padding: 1em;
+}
+.merch div img{
+    max-width: 350px;
+    max-height: 350px;
+}
 /* footer and second Nav elementnts */
