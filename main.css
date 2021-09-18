@@ -9,11 +9,24 @@ dark gold       #ACB34D
 body{
     background-color: #7AC0FF;
 }
+hr{
+    color: #ACB34D;
+}
 .navLeft{
     text-align: left;
 }
 .navRight{
     text-align: right;
+    color: #fff;
+    text-shadow: 1px 1px 1px #447FB3;
+}
+.navRight a, .navRight a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+.navRight a:hover{
+    text-decoration: underline;
+    text-shadow: 1px 1px 1px #447FB3;
 }
 
 /* Header and Title Bar */
@@ -21,16 +34,15 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: #F5FF61;
     font-size: 6.5rem;
-    letter-spacing: -0.02em;
-    margin: 0ch;
-    text-shadow: 2px 3px 0 #ACB34D; offset-x | offset-y | blur-radius | color
+    letter-spacing: -0.01em;
+    margin: 0.5em;
+    text-shadow: 2px 3px 0 #ACB34D; /* offset-x | offset-y | blur-radius | color*/
 }
 h2{
     color: #ACB34D;
-    text-shadow: 2px 3px 2px black; offset-x | offset-y | blur-radius | color
+    text-shadow: 2px 3px 2px black; /* offset-x | offset-y | blur-radius | color */
     
 }
-/* Nav bars */
 /* Slideshow */
 .slideshow{
     display: none;
@@ -41,14 +53,15 @@ h2{
 }
 /* Sidebar/Merch Section */
 .merch{
-    display: inline-block;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 2em auto;
     padding: 2em;
 }
 .merch div{
     display: inline-block;
-    margin: 1em;
+    margin: 1em auto;
     max-width: 350px;
     max-height: 700px;
     background-color: #447FB3;
@@ -60,4 +73,65 @@ h2{
     max-width: 350px;
     max-height: 350px;
 }
+.merch div button{
+    float: right;
+}
+button{
+    border-radius: 12px;
+}
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 /* footer and second Nav elementnts */
+footer{
+    
+    background-color: transparent;
+    height: 25px;
+    font-size: 1.2em;
+    color: #fff;
+    text-shadow: 1px 1px 1px #447FB3;
+    padding: 1.5em 2.0em;
+}
+
+footer ul#footerLeft{
+    display: inline-block;
+    text-align: left;
+    list-style: none;
+    margin: 0 0 0 0.6em;
+    padding: 0;
+}
+
+footer ul li{
+    display: inline-block;
+    padding: 0 0.7em 0 0;
+    margin: 0;
+}
+
+footer ul li::before{
+    content: " ";
+    padding-right: 0.7em;
+}
+
+footer a, footer a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #447FB3;
+    text-decoration: underline;
+}
+#legalRight{
+    float: right;
+    text-align: right;
+    
+
+}
+
+footer h5{
+    text-align: center;
+    color: #447FB3;
+    text-shadow: none;
+    padding: 2px;
+    margin: 2px;
+}
